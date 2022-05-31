@@ -1,0 +1,6 @@
+module Pods_Voice_copy {
+  umbrella header "Pods-Voice_copy-umbrella.h"
+
+  export *
+  module * { export * }
+}

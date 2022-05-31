@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "娱乐社交游戏APP 想藏哪个都能藏.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "娱乐社交游戏APP 想藏哪个都能藏@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "娱乐社交游戏APP 想藏哪个都能藏@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

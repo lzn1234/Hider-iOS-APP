@@ -1,0 +1,28 @@
+PODS:
+  - LookinServer (1.0.5)
+  - RSKImageCropper (3.0.2)
+  - SnapKit (5.6.0)
+  - TZImagePickerController (3.8.1)
+
+DEPENDENCIES:
+  - LookinServer
+  - RSKImageCropper
+  - SnapKit
+  - TZImagePickerController
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - LookinServer
+    - RSKImageCropper
+    - SnapKit
+    - TZImagePickerController
+
+SPEC CHECKSUMS:
+  LookinServer: 3d9a02529ed94a6a08154440c26f6d7f453bb1e7
+  RSKImageCropper: 1ac71e9a82e3f41eea3eedfff8eacb0d3821c9ec
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  TZImagePickerController: 943511626019431372cf908f24c114521e484f0e
+
+PODFILE CHECKSUM: f28ddc75892ba5854c58718e9575e22b2368d543
+
+COCOAPODS: 1.11.3

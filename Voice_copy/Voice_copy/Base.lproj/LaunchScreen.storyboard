@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchBG" translatesAutoresizingMaskIntoConstraints="NO" id="n76-aV-Gqh">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchtitle" translatesAutoresizingMaskIntoConstraints="NO" id="EDz-gk-kbU">
+                                <rect key="frame" x="87" y="143" width="240" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="NdO-G0-87v"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="launchtitile1" translatesAutoresizingMaskIntoConstraints="NO" id="gvw-Tj-nes">
+                                <rect key="frame" x="64" y="184" width="287" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="Wyc-FK-G9f"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="f6E-yl-mka">
+                                <rect key="frame" x="142" y="642" width="131" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Drz-Do-Yjc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gvw-Tj-nes" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="1us-WR-8HD"/>
+                            <constraint firstItem="f6E-yl-mka" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="7Mi-Ou-ayg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n76-aV-Gqh" secondAttribute="bottom" id="D0A-Eh-iuf"/>
+                            <constraint firstItem="EDz-gk-kbU" firstAttribute="centerX" secondItem="gvw-Tj-nes" secondAttribute="centerX" id="JcT-OQ-a1c"/>
+                            <constraint firstItem="EDz-gk-kbU" firstAttribute="centerX" secondItem="n76-aV-Gqh" secondAttribute="centerX" id="a1Q-fW-dzI"/>
+                            <constraint firstItem="gvw-Tj-nes" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="f4R-bh-3aj"/>
+                            <constraint firstItem="EDz-gk-kbU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="99" id="hY5-bK-gVL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n76-aV-Gqh" secondAttribute="trailing" id="iD4-JT-LDn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f6E-yl-mka" secondAttribute="bottom" constant="90" id="igW-gd-e6l"/>
+                            <constraint firstItem="gvw-Tj-nes" firstAttribute="centerX" secondItem="f6E-yl-mka" secondAttribute="centerX" id="qrn-Oq-1rc"/>
+                            <constraint firstItem="n76-aV-Gqh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rWi-s0-7l1"/>
+                            <constraint firstItem="n76-aV-Gqh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vc4-qg-gVa"/>
+                            <constraint firstItem="EDz-gk-kbU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="yoP-0q-JIr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launchBG" width="418.5" height="825"/>
+        <image name="launchtitile1" width="299" height="19.5"/>
+        <image name="launchtitle" width="209.5" height="35"/>
+        <image name="logo" width="80" height="80"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
