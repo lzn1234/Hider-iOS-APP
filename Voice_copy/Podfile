@@ -12,5 +12,6 @@ target 'Voice_copy' do
   
   pod 'TZImagePickerController'
 
-  
+  pod "YYModel"
+
 end

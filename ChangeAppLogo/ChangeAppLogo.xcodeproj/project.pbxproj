@@ -1,0 +1,1163 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACD67043EFE4303DAD838964 /* Pods_ChangeAppLogo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A30A8282D12E15DA7AEC5AC /* Pods_ChangeAppLogo.framework */; };
+		CA1E8B142543F94A00049305 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E8B132543F94A00049305 /* AppDelegate.m */; };
+		CA1E8B172543F94A00049305 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E8B162543F94A00049305 /* SceneDelegate.m */; };
+		CA1E8B1A2543F94A00049305 /* GenerateAppLogoConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E8B192543F94A00049305 /* GenerateAppLogoConfigViewController.m */; };
+		CA1E8B1D2543F94A00049305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1E8B1B2543F94A00049305 /* Main.storyboard */; };
+		CA1E8B1F2543F94F00049305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA1E8B1E2543F94F00049305 /* Assets.xcassets */; };
+		CA1E8B222543F94F00049305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1E8B202543F94F00049305 /* LaunchScreen.storyboard */; };
+		CA1E8B252543F94F00049305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E8B242543F94F00049305 /* main.m */; };
+		CA1E8B312544112800049305 /* AppStoreModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E8B302544112800049305 /* AppStoreModel.m */; };
+		CA1E8B3925441B3500049305 /* AppListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E8B3825441B3500049305 /* AppListViewController.m */; };
+		CA1E8B592544487000049305 /* FilesManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E8B582544487000049305 /* FilesManagerViewController.m */; };
+		CA1E8BD3254D0C3400049305 /* iconVersioning.sh in Resources */ = {isa = PBXBuildFile; fileRef = CA1E8BD2254D0C3400049305 /* iconVersioning.sh */; };
+		CA1E8C5A254E997800049305 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA1E8C59254E997800049305 /* Stickers.xcassets */; };
+		CA1E8C5E254E997800049305 /* WGBEmoticonsFaceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CA1E8C57254E997300049305 /* WGBEmoticonsFaceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CAAC6B5225727AAA00033FD7 /* NSString+WGBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6B5125727AAA00033FD7 /* NSString+WGBExtension.m */; };
+		CAAC6B5325727AAA00033FD7 /* NSString+WGBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6B5125727AAA00033FD7 /* NSString+WGBExtension.m */; };
+		CAAC6B5F25727FE100033FD7 /* ChageLogoMobileconfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6B5E25727FE100033FD7 /* ChageLogoMobileconfig.m */; };
+		CAAC6BA325735A5400033FD7 /* WGBReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6BA225735A5400033FD7 /* WGBReachability.m */; };
+		CAAC6BA425735A5400033FD7 /* WGBReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6BA225735A5400033FD7 /* WGBReachability.m */; };
+		CAAC6BB62573610D00033FD7 /* DetectQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6BB52573610D00033FD7 /* DetectQRCodeTool.m */; };
+		CAAC6BB72573610D00033FD7 /* DetectQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6BB52573610D00033FD7 /* DetectQRCodeTool.m */; };
+		CAAC6C0425739DAC00033FD7 /* values-encoder in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6C0325739DAB00033FD7 /* values-encoder */; };
+		CAAC6C0525739DAC00033FD7 /* values-encoder in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6C0325739DAB00033FD7 /* values-encoder */; };
+		CAAC6C0B25739DDF00033FD7 /* SocialValuesEncoderDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6C0A25739DDF00033FD7 /* SocialValuesEncoderDecoder.m */; };
+		CAAC6C0C25739DDF00033FD7 /* SocialValuesEncoderDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6C0A25739DDF00033FD7 /* SocialValuesEncoderDecoder.m */; };
+		CAAC6CD0257CC36300033FD7 /* AppMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6CCF257CC36300033FD7 /* AppMainViewController.m */; };
+		CAAC6CD6257CC5DC00033FD7 /* CustomLogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6CD5257CC5DC00033FD7 /* CustomLogoViewController.m */; };
+		CAAC6CF0257CCEF800033FD7 /* SFSymbol.Connectivity.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CDC257CCEF800033FD7 /* SFSymbol.Connectivity.plist */; };
+		CAAC6CF1257CCEF800033FD7 /* SFSymbol.Health.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CDD257CCEF800033FD7 /* SFSymbol.Health.plist */; };
+		CAAC6CF2257CCEF800033FD7 /* SFSymbol.Objects&Tools.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CDE257CCEF800033FD7 /* SFSymbol.Objects&Tools.plist */; };
+		CAAC6CF3257CCEF800033FD7 /* SFSymbol.Communication.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CDF257CCEF800033FD7 /* SFSymbol.Communication.plist */; };
+		CAAC6CF4257CCEF800033FD7 /* SFSymbol.Editing.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE0257CCEF800033FD7 /* SFSymbol.Editing.plist */; };
+		CAAC6CF5257CCEF800033FD7 /* SFSymbol.All.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE1257CCEF800033FD7 /* SFSymbol.All.plist */; };
+		CAAC6CF6257CCEF800033FD7 /* SFSymbol.Transportation.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE2257CCEF800033FD7 /* SFSymbol.Transportation.plist */; };
+		CAAC6CF7257CCEF800033FD7 /* SFSymbol.Nature.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE3257CCEF800033FD7 /* SFSymbol.Nature.plist */; };
+		CAAC6CF8257CCEF800033FD7 /* SFSymbol.Human.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE4257CCEF800033FD7 /* SFSymbol.Human.plist */; };
+		CAAC6CF9257CCEF800033FD7 /* SFSymbol.Commerce.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE5257CCEF800033FD7 /* SFSymbol.Commerce.plist */; };
+		CAAC6CFA257CCEF800033FD7 /* SFSymbol.Keyboard.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE6257CCEF800033FD7 /* SFSymbol.Keyboard.plist */; };
+		CAAC6CFB257CCEF800033FD7 /* SFSymbol.Devices.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE7257CCEF800033FD7 /* SFSymbol.Devices.plist */; };
+		CAAC6CFC257CCEF800033FD7 /* SFSymbol.Weather.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE8257CCEF800033FD7 /* SFSymbol.Weather.plist */; };
+		CAAC6CFD257CCEF800033FD7 /* SFSymbol.TextFormatting.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE9257CCEF800033FD7 /* SFSymbol.TextFormatting.plist */; };
+		CAAC6CFE257CCEF800033FD7 /* SFSymbol.Arrows.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CEA257CCEF800033FD7 /* SFSymbol.Arrows.plist */; };
+		CAAC6CFF257CCEF800033FD7 /* SFSymbol.Time.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CEB257CCEF800033FD7 /* SFSymbol.Time.plist */; };
+		CAAC6D00257CCEF800033FD7 /* SFSymbol.Media.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CEC257CCEF800033FD7 /* SFSymbol.Media.plist */; };
+		CAAC6D01257CCEF800033FD7 /* SFSymbol.Indices.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CED257CCEF800033FD7 /* SFSymbol.Indices.plist */; };
+		CAAC6D02257CCEF800033FD7 /* SFSymbol.Shapes.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CEE257CCEF800033FD7 /* SFSymbol.Shapes.plist */; };
+		CAAC6D03257CCEF800033FD7 /* SFSymbol.Math.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CEF257CCEF800033FD7 /* SFSymbol.Math.plist */; };
+		CAAC6D07257CCF1A00033FD7 /* SFSymbol.Weather.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE8257CCEF800033FD7 /* SFSymbol.Weather.plist */; };
+		CAAC6D08257CCF1A00033FD7 /* SFSymbol.Time.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CEB257CCEF800033FD7 /* SFSymbol.Time.plist */; };
+		CAAC6D09257CCF1A00033FD7 /* SFSymbol.Nature.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE3257CCEF800033FD7 /* SFSymbol.Nature.plist */; };
+		CAAC6D0A257CCF1A00033FD7 /* SFSymbol.Keyboard.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE6257CCEF800033FD7 /* SFSymbol.Keyboard.plist */; };
+		CAAC6D0B257CCF1A00033FD7 /* SFSymbol.Health.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CDD257CCEF800033FD7 /* SFSymbol.Health.plist */; };
+		CAAC6D0C257CCF1A00033FD7 /* SFSymbol.Commerce.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE5257CCEF800033FD7 /* SFSymbol.Commerce.plist */; };
+		CAAC6D0D257CCF1A00033FD7 /* SFSymbol.Editing.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE0257CCEF800033FD7 /* SFSymbol.Editing.plist */; };
+		CAAC6D0E257CCF1A00033FD7 /* SFSymbol.Connectivity.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CDC257CCEF800033FD7 /* SFSymbol.Connectivity.plist */; };
+		CAAC6D0F257CCF1A00033FD7 /* SFSymbol.Human.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE4257CCEF800033FD7 /* SFSymbol.Human.plist */; };
+		CAAC6D10257CCF1A00033FD7 /* SFSymbol.Shapes.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CEE257CCEF800033FD7 /* SFSymbol.Shapes.plist */; };
+		CAAC6D11257CCF1A00033FD7 /* SFSymbol.Math.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CEF257CCEF800033FD7 /* SFSymbol.Math.plist */; };
+		CAAC6D12257CCF1A00033FD7 /* SFSymbol.Transportation.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE2257CCEF800033FD7 /* SFSymbol.Transportation.plist */; };
+		CAAC6D13257CCF1A00033FD7 /* SFSymbol.Indices.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CED257CCEF800033FD7 /* SFSymbol.Indices.plist */; };
+		CAAC6D14257CCF1A00033FD7 /* SFSymbol.Devices.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE7257CCEF800033FD7 /* SFSymbol.Devices.plist */; };
+		CAAC6D15257CCF1A00033FD7 /* SFSymbol.Arrows.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CEA257CCEF800033FD7 /* SFSymbol.Arrows.plist */; };
+		CAAC6D16257CCF1A00033FD7 /* SFSymbol.Media.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CEC257CCEF800033FD7 /* SFSymbol.Media.plist */; };
+		CAAC6D17257CCF1A00033FD7 /* SFSymbol.Objects&Tools.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CDE257CCEF800033FD7 /* SFSymbol.Objects&Tools.plist */; };
+		CAAC6D18257CCF1A00033FD7 /* SFSymbol.Communication.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CDF257CCEF800033FD7 /* SFSymbol.Communication.plist */; };
+		CAAC6D19257CCF1A00033FD7 /* SFSymbol.TextFormatting.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE9257CCEF800033FD7 /* SFSymbol.TextFormatting.plist */; };
+		CAAC6D1A257CCF1A00033FD7 /* SFSymbol.All.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAAC6CE1257CCEF800033FD7 /* SFSymbol.All.plist */; };
+		CAAC6D33257CD00B00033FD7 /* SFSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6D20257CD00B00033FD7 /* SFSymbol.m */; };
+		CAAC6D34257CD00B00033FD7 /* SFSymbolCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6D21257CD00B00033FD7 /* SFSymbolCategory.m */; };
+		CAAC6D35257CD00B00033FD7 /* SFSymbolDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6D23257CD00B00033FD7 /* SFSymbolDatasource.m */; };
+		CAAC6D36257CD00B00033FD7 /* ReusableTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6D26257CD00B00033FD7 /* ReusableTitleView.m */; };
+		CAAC6D37257CD00B00033FD7 /* SymbolPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6D27257CD00B00033FD7 /* SymbolPreviewCell.m */; };
+		CAAC6D38257CD00B00033FD7 /* SymbolsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6D2D257CD00B00033FD7 /* SymbolsViewController.m */; };
+		CAAC6D39257CD00B00033FD7 /* SymbolDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6D30257CD00B00033FD7 /* SymbolDetailsViewController.m */; };
+		CAAC6D3A257CD00B00033FD7 /* SymbolSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6D31257CD00B00033FD7 /* SymbolSearchResultsViewController.m */; };
+		CAAC6D3B257CD00B00033FD7 /* CategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6D32257CD00B00033FD7 /* CategoriesViewController.m */; };
+		CAAC6D3F257CD03000033FD7 /* SFSymbolCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6D21257CD00B00033FD7 /* SFSymbolCategory.m */; };
+		CAAC6D40257CD03000033FD7 /* SFSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6D20257CD00B00033FD7 /* SFSymbol.m */; };
+		CAAC6D41257CD03000033FD7 /* SFSymbolDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6D23257CD00B00033FD7 /* SFSymbolDatasource.m */; };
+		CAAC6E132584871A00033FD7 /* GetUUIDHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E122584871A00033FD7 /* GetUUIDHandler.m */; };
+		CAAC6E142584871A00033FD7 /* GetUUIDHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E122584871A00033FD7 /* GetUUIDHandler.m */; };
+		CAAC6E2525848B8100033FD7 /* MD5IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E2425848B8100033FD7 /* MD5IntentHandler.m */; };
+		CAAC6E2625848B8100033FD7 /* MD5IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E2425848B8100033FD7 /* MD5IntentHandler.m */; };
+		CAAC6E2C25848C2700033FD7 /* DataStoreIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E2B25848C2700033FD7 /* DataStoreIntentHandler.m */; };
+		CAAC6E2D25848C2700033FD7 /* DataStoreIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E2B25848C2700033FD7 /* DataStoreIntentHandler.m */; };
+		CAAC6E3425848CA500033FD7 /* SearchDataStoreIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E3325848CA500033FD7 /* SearchDataStoreIntentHandler.m */; };
+		CAAC6E3525848CA500033FD7 /* SearchDataStoreIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E3325848CA500033FD7 /* SearchDataStoreIntentHandler.m */; };
+		CAAC6E3E25848D1D00033FD7 /* DeleteDataStoreIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E3D25848D1D00033FD7 /* DeleteDataStoreIntentHandler.m */; };
+		CAAC6E3F25848D1D00033FD7 /* DeleteDataStoreIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E3D25848D1D00033FD7 /* DeleteDataStoreIntentHandler.m */; };
+		CAAC6E4525848D2F00033FD7 /* PinWordsSegmentIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E4425848D2F00033FD7 /* PinWordsSegmentIntentHandler.m */; };
+		CAAC6E4625848D2F00033FD7 /* PinWordsSegmentIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E4425848D2F00033FD7 /* PinWordsSegmentIntentHandler.m */; };
+		CAAC6E4C25848D3F00033FD7 /* VCardTemplateIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E4B25848D3F00033FD7 /* VCardTemplateIntentHandler.m */; };
+		CAAC6E4D25848D3F00033FD7 /* VCardTemplateIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E4B25848D3F00033FD7 /* VCardTemplateIntentHandler.m */; };
+		CAAC6E5325848D5300033FD7 /* ChangeLogoOnlyOneIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E5225848D5300033FD7 /* ChangeLogoOnlyOneIntentHandler.m */; };
+		CAAC6E5425848D5300033FD7 /* ChangeLogoOnlyOneIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E5225848D5300033FD7 /* ChangeLogoOnlyOneIntentHandler.m */; };
+		CAAC6E5A25848D6D00033FD7 /* ChangeBatchLogoConfigIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E5925848D6D00033FD7 /* ChangeBatchLogoConfigIntentHandler.m */; };
+		CAAC6E5B25848D6D00033FD7 /* ChangeBatchLogoConfigIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E5925848D6D00033FD7 /* ChangeBatchLogoConfigIntentHandler.m */; };
+		CAAC6E6125848D7D00033FD7 /* ChangeBatchAppLogoGroupIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E6025848D7D00033FD7 /* ChangeBatchAppLogoGroupIntentHandler.m */; };
+		CAAC6E6225848D7D00033FD7 /* ChangeBatchAppLogoGroupIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E6025848D7D00033FD7 /* ChangeBatchAppLogoGroupIntentHandler.m */; };
+		CAAC6E6825848D8E00033FD7 /* JudgeNetworkConnectIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E6725848D8E00033FD7 /* JudgeNetworkConnectIntentHandler.m */; };
+		CAAC6E6925848D8E00033FD7 /* JudgeNetworkConnectIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E6725848D8E00033FD7 /* JudgeNetworkConnectIntentHandler.m */; };
+		CAAC6E6F25848DA000033FD7 /* DetectedQRCodeIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E6E25848DA000033FD7 /* DetectedQRCodeIntentHandler.m */; };
+		CAAC6E7025848DA000033FD7 /* DetectedQRCodeIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E6E25848DA000033FD7 /* DetectedQRCodeIntentHandler.m */; };
+		CAAC6E7625848DAE00033FD7 /* SFSymbolsIntentIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E7525848DAE00033FD7 /* SFSymbolsIntentIntentHandler.m */; };
+		CAAC6E7725848DAE00033FD7 /* SFSymbolsIntentIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6E7525848DAE00033FD7 /* SFSymbolsIntentIntentHandler.m */; };
+		CAAC6EE82584F50B00033FD7 /* UIColor+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6EE72584F50B00033FD7 /* UIColor+Extends.m */; };
+		CAAC6EE92584F50B00033FD7 /* UIColor+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6EE72584F50B00033FD7 /* UIColor+Extends.m */; };
+		CAAC6F7F258DF18B00033FD7 /* CoreValuesToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6F7E258DF18B00033FD7 /* CoreValuesToolViewController.m */; };
+		CAAC6F91258DF32900033FD7 /* ChageLogoMobileconfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAC6B5E25727FE100033FD7 /* ChageLogoMobileconfig.m */; };
+		CABF3FAD2571D72C00EBF0E0 /* IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CABF3FAC2571D72C00EBF0E0 /* IntentHandler.m */; };
+		CABF3FC32571D72C00EBF0E0 /* Shortcuts.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CABF3FA92571D72C00EBF0E0 /* Shortcuts.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CABF3FD62571E19600EBF0E0 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CABF3FD52571E19600EBF0E0 /* Intents.intentdefinition */; };
+		CABF3FD72571E19600EBF0E0 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CABF3FD52571E19600EBF0E0 /* Intents.intentdefinition */; };
+		CABF400B25724A7800EBF0E0 /* NSString+WordsSegmentExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CABF400A25724A7800EBF0E0 /* NSString+WordsSegmentExtension.m */; };
+		CABF400C25724A7800EBF0E0 /* NSString+WordsSegmentExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CABF400A25724A7800EBF0E0 /* NSString+WordsSegmentExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA1E8C5C254E997800049305 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA1E8B072543F94A00049305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA1E8C56254E997300049305;
+			remoteInfo = WGBEmoticonsFaceExtension;
+		};
+		CABF3FC12571D72C00EBF0E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA1E8B072543F94A00049305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CABF3FA82571D72C00EBF0E0;
+			remoteInfo = Shortcuts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA1E8C5F254E997800049305 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CA1E8C5E254E997800049305 /* WGBEmoticonsFaceExtension.appex in Embed App Extensions */,
+				CABF3FC32571D72C00EBF0E0 /* Shortcuts.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		26378B57F9725400CB10744B /* Pods-ChangeAppLogo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChangeAppLogo.debug.xcconfig"; path = "Target Support Files/Pods-ChangeAppLogo/Pods-ChangeAppLogo.debug.xcconfig"; sourceTree = "<group>"; };
+		546A2614ABC86A5F0F68863C /* Pods-ChangeAppLogo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChangeAppLogo.release.xcconfig"; path = "Target Support Files/Pods-ChangeAppLogo/Pods-ChangeAppLogo.release.xcconfig"; sourceTree = "<group>"; };
+		6A30A8282D12E15DA7AEC5AC /* Pods_ChangeAppLogo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChangeAppLogo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1E8B0F2543F94A00049305 /* ChangeAppLogo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChangeAppLogo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1E8B122543F94A00049305 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CA1E8B132543F94A00049305 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CA1E8B152543F94A00049305 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		CA1E8B162543F94A00049305 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		CA1E8B182543F94A00049305 /* GenerateAppLogoConfigViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenerateAppLogoConfigViewController.h; sourceTree = "<group>"; };
+		CA1E8B192543F94A00049305 /* GenerateAppLogoConfigViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateAppLogoConfigViewController.m; sourceTree = "<group>"; };
+		CA1E8B1C2543F94A00049305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA1E8B1E2543F94F00049305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA1E8B212543F94F00049305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA1E8B232543F94F00049305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA1E8B242543F94F00049305 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA1E8B2F2544112800049305 /* AppStoreModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppStoreModel.h; sourceTree = "<group>"; };
+		CA1E8B302544112800049305 /* AppStoreModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppStoreModel.m; sourceTree = "<group>"; };
+		CA1E8B3725441B3500049305 /* AppListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppListViewController.h; sourceTree = "<group>"; };
+		CA1E8B3825441B3500049305 /* AppListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppListViewController.m; sourceTree = "<group>"; };
+		CA1E8B572544487000049305 /* FilesManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilesManagerViewController.h; sourceTree = "<group>"; };
+		CA1E8B582544487000049305 /* FilesManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilesManagerViewController.m; sourceTree = "<group>"; };
+		CA1E8BD2254D0C3400049305 /* iconVersioning.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = iconVersioning.sh; sourceTree = SOURCE_ROOT; };
+		CA1E8C57254E997300049305 /* WGBEmoticonsFaceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WGBEmoticonsFaceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1E8C59254E997800049305 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		CA1E8C5B254E997800049305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAAC6B5025727AAA00033FD7 /* NSString+WGBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WGBExtension.h"; sourceTree = "<group>"; };
+		CAAC6B5125727AAA00033FD7 /* NSString+WGBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WGBExtension.m"; sourceTree = "<group>"; };
+		CAAC6B5D25727FE100033FD7 /* ChageLogoMobileconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChageLogoMobileconfig.h; sourceTree = "<group>"; };
+		CAAC6B5E25727FE100033FD7 /* ChageLogoMobileconfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChageLogoMobileconfig.m; sourceTree = "<group>"; };
+		CAAC6BA125735A5400033FD7 /* WGBReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBReachability.h; sourceTree = "<group>"; };
+		CAAC6BA225735A5400033FD7 /* WGBReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBReachability.m; sourceTree = "<group>"; };
+		CAAC6BB42573610D00033FD7 /* DetectQRCodeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetectQRCodeTool.h; sourceTree = "<group>"; };
+		CAAC6BB52573610D00033FD7 /* DetectQRCodeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetectQRCodeTool.m; sourceTree = "<group>"; };
+		CAAC6C0325739DAB00033FD7 /* values-encoder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "values-encoder"; sourceTree = SOURCE_ROOT; };
+		CAAC6C0925739DDE00033FD7 /* SocialValuesEncoderDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialValuesEncoderDecoder.h; sourceTree = "<group>"; };
+		CAAC6C0A25739DDF00033FD7 /* SocialValuesEncoderDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialValuesEncoderDecoder.m; sourceTree = "<group>"; };
+		CAAC6CCE257CC36300033FD7 /* AppMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppMainViewController.h; sourceTree = "<group>"; };
+		CAAC6CCF257CC36300033FD7 /* AppMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppMainViewController.m; sourceTree = "<group>"; };
+		CAAC6CD4257CC5DC00033FD7 /* CustomLogoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLogoViewController.h; sourceTree = "<group>"; };
+		CAAC6CD5257CC5DC00033FD7 /* CustomLogoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLogoViewController.m; sourceTree = "<group>"; };
+		CAAC6CDC257CCEF800033FD7 /* SFSymbol.Connectivity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.Connectivity.plist; sourceTree = "<group>"; };
+		CAAC6CDD257CCEF800033FD7 /* SFSymbol.Health.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.Health.plist; sourceTree = "<group>"; };
+		CAAC6CDE257CCEF800033FD7 /* SFSymbol.Objects&Tools.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SFSymbol.Objects&Tools.plist"; sourceTree = "<group>"; };
+		CAAC6CDF257CCEF800033FD7 /* SFSymbol.Communication.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.Communication.plist; sourceTree = "<group>"; };
+		CAAC6CE0257CCEF800033FD7 /* SFSymbol.Editing.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.Editing.plist; sourceTree = "<group>"; };
+		CAAC6CE1257CCEF800033FD7 /* SFSymbol.All.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.All.plist; sourceTree = "<group>"; };
+		CAAC6CE2257CCEF800033FD7 /* SFSymbol.Transportation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.Transportation.plist; sourceTree = "<group>"; };
+		CAAC6CE3257CCEF800033FD7 /* SFSymbol.Nature.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.Nature.plist; sourceTree = "<group>"; };
+		CAAC6CE4257CCEF800033FD7 /* SFSymbol.Human.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.Human.plist; sourceTree = "<group>"; };
+		CAAC6CE5257CCEF800033FD7 /* SFSymbol.Commerce.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.Commerce.plist; sourceTree = "<group>"; };
+		CAAC6CE6257CCEF800033FD7 /* SFSymbol.Keyboard.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.Keyboard.plist; sourceTree = "<group>"; };
+		CAAC6CE7257CCEF800033FD7 /* SFSymbol.Devices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.Devices.plist; sourceTree = "<group>"; };
+		CAAC6CE8257CCEF800033FD7 /* SFSymbol.Weather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.Weather.plist; sourceTree = "<group>"; };
+		CAAC6CE9257CCEF800033FD7 /* SFSymbol.TextFormatting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.TextFormatting.plist; sourceTree = "<group>"; };
+		CAAC6CEA257CCEF800033FD7 /* SFSymbol.Arrows.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.Arrows.plist; sourceTree = "<group>"; };
+		CAAC6CEB257CCEF800033FD7 /* SFSymbol.Time.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.Time.plist; sourceTree = "<group>"; };
+		CAAC6CEC257CCEF800033FD7 /* SFSymbol.Media.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.Media.plist; sourceTree = "<group>"; };
+		CAAC6CED257CCEF800033FD7 /* SFSymbol.Indices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.Indices.plist; sourceTree = "<group>"; };
+		CAAC6CEE257CCEF800033FD7 /* SFSymbol.Shapes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.Shapes.plist; sourceTree = "<group>"; };
+		CAAC6CEF257CCEF800033FD7 /* SFSymbol.Math.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFSymbol.Math.plist; sourceTree = "<group>"; };
+		CAAC6D1F257CD00B00033FD7 /* SFSymbolDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSymbolDatasource.h; sourceTree = "<group>"; };
+		CAAC6D20257CD00B00033FD7 /* SFSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSymbol.m; sourceTree = "<group>"; };
+		CAAC6D21257CD00B00033FD7 /* SFSymbolCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSymbolCategory.m; sourceTree = "<group>"; };
+		CAAC6D22257CD00B00033FD7 /* SFSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSymbol.h; sourceTree = "<group>"; };
+		CAAC6D23257CD00B00033FD7 /* SFSymbolDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSymbolDatasource.m; sourceTree = "<group>"; };
+		CAAC6D24257CD00B00033FD7 /* SFSymbolCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSymbolCategory.h; sourceTree = "<group>"; };
+		CAAC6D26257CD00B00033FD7 /* ReusableTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReusableTitleView.m; sourceTree = "<group>"; };
+		CAAC6D27257CD00B00033FD7 /* SymbolPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymbolPreviewCell.m; sourceTree = "<group>"; };
+		CAAC6D28257CD00B00033FD7 /* ReusableTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReusableTitleView.h; sourceTree = "<group>"; };
+		CAAC6D29257CD00B00033FD7 /* SymbolPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymbolPreviewCell.h; sourceTree = "<group>"; };
+		CAAC6D2B257CD00B00033FD7 /* SymbolSearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymbolSearchResultsViewController.h; sourceTree = "<group>"; };
+		CAAC6D2C257CD00B00033FD7 /* SymbolDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymbolDetailsViewController.h; sourceTree = "<group>"; };
+		CAAC6D2D257CD00B00033FD7 /* SymbolsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymbolsViewController.m; sourceTree = "<group>"; };
+		CAAC6D2E257CD00B00033FD7 /* CategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriesViewController.h; sourceTree = "<group>"; };
+		CAAC6D2F257CD00B00033FD7 /* SymbolsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymbolsViewController.h; sourceTree = "<group>"; };
+		CAAC6D30257CD00B00033FD7 /* SymbolDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymbolDetailsViewController.m; sourceTree = "<group>"; };
+		CAAC6D31257CD00B00033FD7 /* SymbolSearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymbolSearchResultsViewController.m; sourceTree = "<group>"; };
+		CAAC6D32257CD00B00033FD7 /* CategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriesViewController.m; sourceTree = "<group>"; };
+		CAAC6D49257CD34000033FD7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CAAC6E112584871A00033FD7 /* GetUUIDHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetUUIDHandler.h; sourceTree = "<group>"; };
+		CAAC6E122584871A00033FD7 /* GetUUIDHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetUUIDHandler.m; sourceTree = "<group>"; };
+		CAAC6E2325848B8100033FD7 /* MD5IntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MD5IntentHandler.h; sourceTree = "<group>"; };
+		CAAC6E2425848B8100033FD7 /* MD5IntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MD5IntentHandler.m; sourceTree = "<group>"; };
+		CAAC6E2A25848C2700033FD7 /* DataStoreIntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStoreIntentHandler.h; sourceTree = "<group>"; };
+		CAAC6E2B25848C2700033FD7 /* DataStoreIntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStoreIntentHandler.m; sourceTree = "<group>"; };
+		CAAC6E3225848CA500033FD7 /* SearchDataStoreIntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchDataStoreIntentHandler.h; sourceTree = "<group>"; };
+		CAAC6E3325848CA500033FD7 /* SearchDataStoreIntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchDataStoreIntentHandler.m; sourceTree = "<group>"; };
+		CAAC6E3C25848D1D00033FD7 /* DeleteDataStoreIntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteDataStoreIntentHandler.h; sourceTree = "<group>"; };
+		CAAC6E3D25848D1D00033FD7 /* DeleteDataStoreIntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteDataStoreIntentHandler.m; sourceTree = "<group>"; };
+		CAAC6E4325848D2F00033FD7 /* PinWordsSegmentIntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinWordsSegmentIntentHandler.h; sourceTree = "<group>"; };
+		CAAC6E4425848D2F00033FD7 /* PinWordsSegmentIntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinWordsSegmentIntentHandler.m; sourceTree = "<group>"; };
+		CAAC6E4A25848D3F00033FD7 /* VCardTemplateIntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCardTemplateIntentHandler.h; sourceTree = "<group>"; };
+		CAAC6E4B25848D3F00033FD7 /* VCardTemplateIntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCardTemplateIntentHandler.m; sourceTree = "<group>"; };
+		CAAC6E5125848D5300033FD7 /* ChangeLogoOnlyOneIntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeLogoOnlyOneIntentHandler.h; sourceTree = "<group>"; };
+		CAAC6E5225848D5300033FD7 /* ChangeLogoOnlyOneIntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeLogoOnlyOneIntentHandler.m; sourceTree = "<group>"; };
+		CAAC6E5825848D6D00033FD7 /* ChangeBatchLogoConfigIntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeBatchLogoConfigIntentHandler.h; sourceTree = "<group>"; };
+		CAAC6E5925848D6D00033FD7 /* ChangeBatchLogoConfigIntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeBatchLogoConfigIntentHandler.m; sourceTree = "<group>"; };
+		CAAC6E5F25848D7D00033FD7 /* ChangeBatchAppLogoGroupIntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeBatchAppLogoGroupIntentHandler.h; sourceTree = "<group>"; };
+		CAAC6E6025848D7D00033FD7 /* ChangeBatchAppLogoGroupIntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeBatchAppLogoGroupIntentHandler.m; sourceTree = "<group>"; };
+		CAAC6E6625848D8E00033FD7 /* JudgeNetworkConnectIntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JudgeNetworkConnectIntentHandler.h; sourceTree = "<group>"; };
+		CAAC6E6725848D8E00033FD7 /* JudgeNetworkConnectIntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JudgeNetworkConnectIntentHandler.m; sourceTree = "<group>"; };
+		CAAC6E6D25848DA000033FD7 /* DetectedQRCodeIntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetectedQRCodeIntentHandler.h; sourceTree = "<group>"; };
+		CAAC6E6E25848DA000033FD7 /* DetectedQRCodeIntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetectedQRCodeIntentHandler.m; sourceTree = "<group>"; };
+		CAAC6E7425848DAE00033FD7 /* SFSymbolsIntentIntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFSymbolsIntentIntentHandler.h; sourceTree = "<group>"; };
+		CAAC6E7525848DAE00033FD7 /* SFSymbolsIntentIntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFSymbolsIntentIntentHandler.m; sourceTree = "<group>"; };
+		CAAC6EE62584F50B00033FD7 /* UIColor+Extends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extends.h"; sourceTree = "<group>"; };
+		CAAC6EE72584F50B00033FD7 /* UIColor+Extends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extends.m"; sourceTree = "<group>"; };
+		CAAC6F7D258DF18A00033FD7 /* CoreValuesToolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreValuesToolViewController.h; sourceTree = "<group>"; };
+		CAAC6F7E258DF18B00033FD7 /* CoreValuesToolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreValuesToolViewController.m; sourceTree = "<group>"; };
+		CABF3FA92571D72C00EBF0E0 /* Shortcuts.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Shortcuts.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CABF3FAB2571D72C00EBF0E0 /* IntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentHandler.h; sourceTree = "<group>"; };
+		CABF3FAC2571D72C00EBF0E0 /* IntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentHandler.m; sourceTree = "<group>"; };
+		CABF3FAE2571D72C00EBF0E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CABF3FB42571D72C00EBF0E0 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		CABF3FD52571E19600EBF0E0 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		CABF400925724A7800EBF0E0 /* NSString+WordsSegmentExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WordsSegmentExtension.h"; sourceTree = "<group>"; };
+		CABF400A25724A7800EBF0E0 /* NSString+WordsSegmentExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordsSegmentExtension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA1E8B0C2543F94A00049305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACD67043EFE4303DAD838964 /* Pods_ChangeAppLogo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CABF3FA62571D72C00EBF0E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F877F4C1AC655FC1D32F7F99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7ADBDF8403CF796F9471B12F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26378B57F9725400CB10744B /* Pods-ChangeAppLogo.debug.xcconfig */,
+				546A2614ABC86A5F0F68863C /* Pods-ChangeAppLogo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA1E8B062543F94A00049305 = {
+			isa = PBXGroup;
+			children = (
+				CA1E8B112543F94A00049305 /* ChangeAppLogo */,
+				CA1E8C58254E997300049305 /* WGBEmoticonsFaceExtension */,
+				CABF3FAA2571D72C00EBF0E0 /* Shortcuts */,
+				CA1E8B102543F94A00049305 /* Products */,
+				7ADBDF8403CF796F9471B12F /* Pods */,
+				D5817BDAA99A8423AD1E03AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CA1E8B102543F94A00049305 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA1E8B0F2543F94A00049305 /* ChangeAppLogo.app */,
+				CA1E8C57254E997300049305 /* WGBEmoticonsFaceExtension.appex */,
+				CABF3FA92571D72C00EBF0E0 /* Shortcuts.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA1E8B112543F94A00049305 /* ChangeAppLogo */ = {
+			isa = PBXGroup;
+			children = (
+				CAAC6F6C258DF01200033FD7 /* FeatureModule */,
+				CAAC6D48257CD32800033FD7 /* HeaderFiles */,
+				CAAC6CDB257CCEF800033FD7 /* Resource */,
+				CAAC6CDA257CCED500033FD7 /* SFSymbolsPreview */,
+				CAAC6BA025735A2D00033FD7 /* Tool */,
+				CA1E8BD2254D0C3400049305 /* iconVersioning.sh */,
+				CAAC6C0325739DAB00033FD7 /* values-encoder */,
+				CA1E8B122543F94A00049305 /* AppDelegate.h */,
+				CA1E8B132543F94A00049305 /* AppDelegate.m */,
+				CA1E8B152543F94A00049305 /* SceneDelegate.h */,
+				CA1E8B162543F94A00049305 /* SceneDelegate.m */,
+				CA1E8B1B2543F94A00049305 /* Main.storyboard */,
+				CA1E8B1E2543F94F00049305 /* Assets.xcassets */,
+				CA1E8B202543F94F00049305 /* LaunchScreen.storyboard */,
+				CA1E8B232543F94F00049305 /* Info.plist */,
+				CA1E8B242543F94F00049305 /* main.m */,
+			);
+			path = ChangeAppLogo;
+			sourceTree = "<group>";
+		};
+		CA1E8C58254E997300049305 /* WGBEmoticonsFaceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				CA1E8C59254E997800049305 /* Stickers.xcassets */,
+				CA1E8C5B254E997800049305 /* Info.plist */,
+			);
+			path = WGBEmoticonsFaceExtension;
+			sourceTree = "<group>";
+		};
+		CAAC6BA025735A2D00033FD7 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				CAAC6BA125735A5400033FD7 /* WGBReachability.h */,
+				CAAC6BA225735A5400033FD7 /* WGBReachability.m */,
+				CAAC6BB42573610D00033FD7 /* DetectQRCodeTool.h */,
+				CAAC6BB52573610D00033FD7 /* DetectQRCodeTool.m */,
+				CAAC6C0925739DDE00033FD7 /* SocialValuesEncoderDecoder.h */,
+				CAAC6C0A25739DDF00033FD7 /* SocialValuesEncoderDecoder.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		CAAC6CDA257CCED500033FD7 /* SFSymbolsPreview */ = {
+			isa = PBXGroup;
+			children = (
+				CAAC6D2A257CD00B00033FD7 /* C */,
+				CAAC6D1E257CD00B00033FD7 /* M */,
+				CAAC6D25257CD00B00033FD7 /* V */,
+			);
+			path = SFSymbolsPreview;
+			sourceTree = "<group>";
+		};
+		CAAC6CDB257CCEF800033FD7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CAAC6CDC257CCEF800033FD7 /* SFSymbol.Connectivity.plist */,
+				CAAC6CDD257CCEF800033FD7 /* SFSymbol.Health.plist */,
+				CAAC6CDE257CCEF800033FD7 /* SFSymbol.Objects&Tools.plist */,
+				CAAC6CDF257CCEF800033FD7 /* SFSymbol.Communication.plist */,
+				CAAC6CE0257CCEF800033FD7 /* SFSymbol.Editing.plist */,
+				CAAC6CE1257CCEF800033FD7 /* SFSymbol.All.plist */,
+				CAAC6CE2257CCEF800033FD7 /* SFSymbol.Transportation.plist */,
+				CAAC6CE3257CCEF800033FD7 /* SFSymbol.Nature.plist */,
+				CAAC6CE4257CCEF800033FD7 /* SFSymbol.Human.plist */,
+				CAAC6CE5257CCEF800033FD7 /* SFSymbol.Commerce.plist */,
+				CAAC6CE6257CCEF800033FD7 /* SFSymbol.Keyboard.plist */,
+				CAAC6CE7257CCEF800033FD7 /* SFSymbol.Devices.plist */,
+				CAAC6CE8257CCEF800033FD7 /* SFSymbol.Weather.plist */,
+				CAAC6CE9257CCEF800033FD7 /* SFSymbol.TextFormatting.plist */,
+				CAAC6CEA257CCEF800033FD7 /* SFSymbol.Arrows.plist */,
+				CAAC6CEB257CCEF800033FD7 /* SFSymbol.Time.plist */,
+				CAAC6CEC257CCEF800033FD7 /* SFSymbol.Media.plist */,
+				CAAC6CED257CCEF800033FD7 /* SFSymbol.Indices.plist */,
+				CAAC6CEE257CCEF800033FD7 /* SFSymbol.Shapes.plist */,
+				CAAC6CEF257CCEF800033FD7 /* SFSymbol.Math.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		CAAC6D1E257CD00B00033FD7 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				CAAC6D22257CD00B00033FD7 /* SFSymbol.h */,
+				CAAC6D20257CD00B00033FD7 /* SFSymbol.m */,
+				CAAC6D24257CD00B00033FD7 /* SFSymbolCategory.h */,
+				CAAC6D21257CD00B00033FD7 /* SFSymbolCategory.m */,
+				CAAC6D1F257CD00B00033FD7 /* SFSymbolDatasource.h */,
+				CAAC6D23257CD00B00033FD7 /* SFSymbolDatasource.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		CAAC6D25257CD00B00033FD7 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				CAAC6D28257CD00B00033FD7 /* ReusableTitleView.h */,
+				CAAC6D26257CD00B00033FD7 /* ReusableTitleView.m */,
+				CAAC6D29257CD00B00033FD7 /* SymbolPreviewCell.h */,
+				CAAC6D27257CD00B00033FD7 /* SymbolPreviewCell.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		CAAC6D2A257CD00B00033FD7 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				CAAC6D2E257CD00B00033FD7 /* CategoriesViewController.h */,
+				CAAC6D32257CD00B00033FD7 /* CategoriesViewController.m */,
+				CAAC6D2C257CD00B00033FD7 /* SymbolDetailsViewController.h */,
+				CAAC6D30257CD00B00033FD7 /* SymbolDetailsViewController.m */,
+				CAAC6D2B257CD00B00033FD7 /* SymbolSearchResultsViewController.h */,
+				CAAC6D31257CD00B00033FD7 /* SymbolSearchResultsViewController.m */,
+				CAAC6D2F257CD00B00033FD7 /* SymbolsViewController.h */,
+				CAAC6D2D257CD00B00033FD7 /* SymbolsViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		CAAC6D48257CD32800033FD7 /* HeaderFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CAAC6D49257CD34000033FD7 /* PrefixHeader.pch */,
+			);
+			path = HeaderFiles;
+			sourceTree = "<group>";
+		};
+		CAAC6E3125848C6800033FD7 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				CAAC6E112584871A00033FD7 /* GetUUIDHandler.h */,
+				CAAC6E122584871A00033FD7 /* GetUUIDHandler.m */,
+				CAAC6E2325848B8100033FD7 /* MD5IntentHandler.h */,
+				CAAC6E2425848B8100033FD7 /* MD5IntentHandler.m */,
+				CAAC6E2A25848C2700033FD7 /* DataStoreIntentHandler.h */,
+				CAAC6E2B25848C2700033FD7 /* DataStoreIntentHandler.m */,
+				CAAC6E3225848CA500033FD7 /* SearchDataStoreIntentHandler.h */,
+				CAAC6E3325848CA500033FD7 /* SearchDataStoreIntentHandler.m */,
+				CAAC6E3C25848D1D00033FD7 /* DeleteDataStoreIntentHandler.h */,
+				CAAC6E3D25848D1D00033FD7 /* DeleteDataStoreIntentHandler.m */,
+				CAAC6E4325848D2F00033FD7 /* PinWordsSegmentIntentHandler.h */,
+				CAAC6E4425848D2F00033FD7 /* PinWordsSegmentIntentHandler.m */,
+				CAAC6E4A25848D3F00033FD7 /* VCardTemplateIntentHandler.h */,
+				CAAC6E4B25848D3F00033FD7 /* VCardTemplateIntentHandler.m */,
+				CAAC6E5125848D5300033FD7 /* ChangeLogoOnlyOneIntentHandler.h */,
+				CAAC6E5225848D5300033FD7 /* ChangeLogoOnlyOneIntentHandler.m */,
+				CAAC6E5825848D6D00033FD7 /* ChangeBatchLogoConfigIntentHandler.h */,
+				CAAC6E5925848D6D00033FD7 /* ChangeBatchLogoConfigIntentHandler.m */,
+				CAAC6E5F25848D7D00033FD7 /* ChangeBatchAppLogoGroupIntentHandler.h */,
+				CAAC6E6025848D7D00033FD7 /* ChangeBatchAppLogoGroupIntentHandler.m */,
+				CAAC6E6625848D8E00033FD7 /* JudgeNetworkConnectIntentHandler.h */,
+				CAAC6E6725848D8E00033FD7 /* JudgeNetworkConnectIntentHandler.m */,
+				CAAC6E6D25848DA000033FD7 /* DetectedQRCodeIntentHandler.h */,
+				CAAC6E6E25848DA000033FD7 /* DetectedQRCodeIntentHandler.m */,
+				CAAC6E7425848DAE00033FD7 /* SFSymbolsIntentIntentHandler.h */,
+				CAAC6E7525848DAE00033FD7 /* SFSymbolsIntentIntentHandler.m */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		CAAC6F6C258DF01200033FD7 /* FeatureModule */ = {
+			isa = PBXGroup;
+			children = (
+				CAAC6F6E258DF08600033FD7 /* Controller */,
+				CAAC6F6D258DF07700033FD7 /* Model */,
+			);
+			path = FeatureModule;
+			sourceTree = "<group>";
+		};
+		CAAC6F6D258DF07700033FD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CAAC6B5D25727FE100033FD7 /* ChageLogoMobileconfig.h */,
+				CAAC6B5E25727FE100033FD7 /* ChageLogoMobileconfig.m */,
+				CA1E8B2F2544112800049305 /* AppStoreModel.h */,
+				CA1E8B302544112800049305 /* AppStoreModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CAAC6F6E258DF08600033FD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CAAC6CCE257CC36300033FD7 /* AppMainViewController.h */,
+				CAAC6CCF257CC36300033FD7 /* AppMainViewController.m */,
+				CAAC6CD4257CC5DC00033FD7 /* CustomLogoViewController.h */,
+				CAAC6CD5257CC5DC00033FD7 /* CustomLogoViewController.m */,
+				CA1E8B182543F94A00049305 /* GenerateAppLogoConfigViewController.h */,
+				CA1E8B192543F94A00049305 /* GenerateAppLogoConfigViewController.m */,
+				CA1E8B3725441B3500049305 /* AppListViewController.h */,
+				CA1E8B3825441B3500049305 /* AppListViewController.m */,
+				CA1E8B572544487000049305 /* FilesManagerViewController.h */,
+				CA1E8B582544487000049305 /* FilesManagerViewController.m */,
+				CAAC6F7D258DF18A00033FD7 /* CoreValuesToolViewController.h */,
+				CAAC6F7E258DF18B00033FD7 /* CoreValuesToolViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CABF3FAA2571D72C00EBF0E0 /* Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				CAAC6E3125848C6800033FD7 /* Handlers */,
+				CABF400825724A2D00EBF0E0 /* Category */,
+				CABF3FAB2571D72C00EBF0E0 /* IntentHandler.h */,
+				CABF3FAC2571D72C00EBF0E0 /* IntentHandler.m */,
+				CABF3FD52571E19600EBF0E0 /* Intents.intentdefinition */,
+				CABF3FAE2571D72C00EBF0E0 /* Info.plist */,
+			);
+			path = Shortcuts;
+			sourceTree = "<group>";
+		};
+		CABF400825724A2D00EBF0E0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CAAC6EE62584F50B00033FD7 /* UIColor+Extends.h */,
+				CAAC6EE72584F50B00033FD7 /* UIColor+Extends.m */,
+				CAAC6B5025727AAA00033FD7 /* NSString+WGBExtension.h */,
+				CAAC6B5125727AAA00033FD7 /* NSString+WGBExtension.m */,
+				CABF400925724A7800EBF0E0 /* NSString+WordsSegmentExtension.h */,
+				CABF400A25724A7800EBF0E0 /* NSString+WordsSegmentExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D5817BDAA99A8423AD1E03AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A30A8282D12E15DA7AEC5AC /* Pods_ChangeAppLogo.framework */,
+				CABF3FB42571D72C00EBF0E0 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA1E8B0E2543F94A00049305 /* ChangeAppLogo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA1E8B282543F94F00049305 /* Build configuration list for PBXNativeTarget "ChangeAppLogo" */;
+			buildPhases = (
+				C8D2DE071892C607AD411C7A /* [CP] Check Pods Manifest.lock */,
+				CA1E8B0B2543F94A00049305 /* Sources */,
+				CA1E8B0C2543F94A00049305 /* Frameworks */,
+				CA1E8B0D2543F94A00049305 /* Resources */,
+				25FCBE681DA6EB9E1640555A /* [CP] Embed Pods Frameworks */,
+				CA1E8C5F254E997800049305 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA1E8C5D254E997800049305 /* PBXTargetDependency */,
+				CABF3FC22571D72C00EBF0E0 /* PBXTargetDependency */,
+			);
+			name = ChangeAppLogo;
+			productName = ChangeAppLogo;
+			productReference = CA1E8B0F2543F94A00049305 /* ChangeAppLogo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA1E8C56254E997300049305 /* WGBEmoticonsFaceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA1E8C62254E997800049305 /* Build configuration list for PBXNativeTarget "WGBEmoticonsFaceExtension" */;
+			buildPhases = (
+				CA1E8C55254E997300049305 /* Resources */,
+				F877F4C1AC655FC1D32F7F99 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WGBEmoticonsFaceExtension;
+			productName = WGBEmoticonsFaceExtension;
+			productReference = CA1E8C57254E997300049305 /* WGBEmoticonsFaceExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
+		CABF3FA82571D72C00EBF0E0 /* Shortcuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CABF3FC72571D72C00EBF0E0 /* Build configuration list for PBXNativeTarget "Shortcuts" */;
+			buildPhases = (
+				CABF3FA52571D72C00EBF0E0 /* Sources */,
+				CABF3FA62571D72C00EBF0E0 /* Frameworks */,
+				CABF3FA72571D72C00EBF0E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shortcuts;
+			productName = Shortcuts;
+			productReference = CABF3FA92571D72C00EBF0E0 /* Shortcuts.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA1E8B072543F94A00049305 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CA1E8B0E2543F94A00049305 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					CA1E8C56254E997300049305 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					CABF3FA82571D72C00EBF0E0 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = CA1E8B0A2543F94A00049305 /* Build configuration list for PBXProject "ChangeAppLogo" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA1E8B062543F94A00049305;
+			productRefGroup = CA1E8B102543F94A00049305 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA1E8B0E2543F94A00049305 /* ChangeAppLogo */,
+				CA1E8C56254E997300049305 /* WGBEmoticonsFaceExtension */,
+				CABF3FA82571D72C00EBF0E0 /* Shortcuts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA1E8B0D2543F94A00049305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAAC6CF7257CCEF800033FD7 /* SFSymbol.Nature.plist in Resources */,
+				CA1E8B222543F94F00049305 /* LaunchScreen.storyboard in Resources */,
+				CAAC6CFB257CCEF800033FD7 /* SFSymbol.Devices.plist in Resources */,
+				CAAC6CF8257CCEF800033FD7 /* SFSymbol.Human.plist in Resources */,
+				CAAC6CF0257CCEF800033FD7 /* SFSymbol.Connectivity.plist in Resources */,
+				CAAC6CFC257CCEF800033FD7 /* SFSymbol.Weather.plist in Resources */,
+				CAAC6CF3257CCEF800033FD7 /* SFSymbol.Communication.plist in Resources */,
+				CAAC6CF4257CCEF800033FD7 /* SFSymbol.Editing.plist in Resources */,
+				CAAC6CF6257CCEF800033FD7 /* SFSymbol.Transportation.plist in Resources */,
+				CA1E8B1F2543F94F00049305 /* Assets.xcassets in Resources */,
+				CAAC6CFE257CCEF800033FD7 /* SFSymbol.Arrows.plist in Resources */,
+				CAAC6D00257CCEF800033FD7 /* SFSymbol.Media.plist in Resources */,
+				CA1E8BD3254D0C3400049305 /* iconVersioning.sh in Resources */,
+				CAAC6CF9257CCEF800033FD7 /* SFSymbol.Commerce.plist in Resources */,
+				CAAC6D03257CCEF800033FD7 /* SFSymbol.Math.plist in Resources */,
+				CAAC6CF5257CCEF800033FD7 /* SFSymbol.All.plist in Resources */,
+				CAAC6CFF257CCEF800033FD7 /* SFSymbol.Time.plist in Resources */,
+				CAAC6D02257CCEF800033FD7 /* SFSymbol.Shapes.plist in Resources */,
+				CAAC6CFD257CCEF800033FD7 /* SFSymbol.TextFormatting.plist in Resources */,
+				CAAC6D01257CCEF800033FD7 /* SFSymbol.Indices.plist in Resources */,
+				CAAC6CF2257CCEF800033FD7 /* SFSymbol.Objects&Tools.plist in Resources */,
+				CAAC6C0425739DAC00033FD7 /* values-encoder in Resources */,
+				CAAC6CF1257CCEF800033FD7 /* SFSymbol.Health.plist in Resources */,
+				CA1E8B1D2543F94A00049305 /* Main.storyboard in Resources */,
+				CAAC6CFA257CCEF800033FD7 /* SFSymbol.Keyboard.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA1E8C55254E997300049305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1E8C5A254E997800049305 /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CABF3FA72571D72C00EBF0E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAAC6D10257CCF1A00033FD7 /* SFSymbol.Shapes.plist in Resources */,
+				CAAC6C0525739DAC00033FD7 /* values-encoder in Resources */,
+				CAAC6D14257CCF1A00033FD7 /* SFSymbol.Devices.plist in Resources */,
+				CAAC6D0D257CCF1A00033FD7 /* SFSymbol.Editing.plist in Resources */,
+				CAAC6D12257CCF1A00033FD7 /* SFSymbol.Transportation.plist in Resources */,
+				CAAC6D0A257CCF1A00033FD7 /* SFSymbol.Keyboard.plist in Resources */,
+				CAAC6D1A257CCF1A00033FD7 /* SFSymbol.All.plist in Resources */,
+				CAAC6D11257CCF1A00033FD7 /* SFSymbol.Math.plist in Resources */,
+				CAAC6D0B257CCF1A00033FD7 /* SFSymbol.Health.plist in Resources */,
+				CAAC6D18257CCF1A00033FD7 /* SFSymbol.Communication.plist in Resources */,
+				CAAC6D0C257CCF1A00033FD7 /* SFSymbol.Commerce.plist in Resources */,
+				CAAC6D07257CCF1A00033FD7 /* SFSymbol.Weather.plist in Resources */,
+				CAAC6D15257CCF1A00033FD7 /* SFSymbol.Arrows.plist in Resources */,
+				CAAC6D08257CCF1A00033FD7 /* SFSymbol.Time.plist in Resources */,
+				CAAC6D17257CCF1A00033FD7 /* SFSymbol.Objects&Tools.plist in Resources */,
+				CAAC6D16257CCF1A00033FD7 /* SFSymbol.Media.plist in Resources */,
+				CAAC6D13257CCF1A00033FD7 /* SFSymbol.Indices.plist in Resources */,
+				CAAC6D19257CCF1A00033FD7 /* SFSymbol.TextFormatting.plist in Resources */,
+				CAAC6D0E257CCF1A00033FD7 /* SFSymbol.Connectivity.plist in Resources */,
+				CAAC6D0F257CCF1A00033FD7 /* SFSymbol.Human.plist in Resources */,
+				CAAC6D09257CCF1A00033FD7 /* SFSymbol.Nature.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25FCBE681DA6EB9E1640555A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChangeAppLogo/Pods-ChangeAppLogo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChangeAppLogo/Pods-ChangeAppLogo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChangeAppLogo/Pods-ChangeAppLogo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8D2DE071892C607AD411C7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChangeAppLogo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA1E8B0B2543F94A00049305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAAC6CD6257CC5DC00033FD7 /* CustomLogoViewController.m in Sources */,
+				CAAC6B5225727AAA00033FD7 /* NSString+WGBExtension.m in Sources */,
+				CAAC6E5325848D5300033FD7 /* ChangeLogoOnlyOneIntentHandler.m in Sources */,
+				CAAC6E3E25848D1D00033FD7 /* DeleteDataStoreIntentHandler.m in Sources */,
+				CAAC6BB62573610D00033FD7 /* DetectQRCodeTool.m in Sources */,
+				CA1E8B1A2543F94A00049305 /* GenerateAppLogoConfigViewController.m in Sources */,
+				CAAC6E6F25848DA000033FD7 /* DetectedQRCodeIntentHandler.m in Sources */,
+				CA1E8B142543F94A00049305 /* AppDelegate.m in Sources */,
+				CA1E8B3925441B3500049305 /* AppListViewController.m in Sources */,
+				CAAC6E3425848CA500033FD7 /* SearchDataStoreIntentHandler.m in Sources */,
+				CAAC6E4C25848D3F00033FD7 /* VCardTemplateIntentHandler.m in Sources */,
+				CAAC6F7F258DF18B00033FD7 /* CoreValuesToolViewController.m in Sources */,
+				CABF400B25724A7800EBF0E0 /* NSString+WordsSegmentExtension.m in Sources */,
+				CAAC6BA325735A5400033FD7 /* WGBReachability.m in Sources */,
+				CAAC6E6825848D8E00033FD7 /* JudgeNetworkConnectIntentHandler.m in Sources */,
+				CAAC6E5A25848D6D00033FD7 /* ChangeBatchLogoConfigIntentHandler.m in Sources */,
+				CA1E8B252543F94F00049305 /* main.m in Sources */,
+				CAAC6D39257CD00B00033FD7 /* SymbolDetailsViewController.m in Sources */,
+				CA1E8B592544487000049305 /* FilesManagerViewController.m in Sources */,
+				CAAC6D36257CD00B00033FD7 /* ReusableTitleView.m in Sources */,
+				CAAC6D33257CD00B00033FD7 /* SFSymbol.m in Sources */,
+				CA1E8B312544112800049305 /* AppStoreModel.m in Sources */,
+				CAAC6E6125848D7D00033FD7 /* ChangeBatchAppLogoGroupIntentHandler.m in Sources */,
+				CAAC6B5F25727FE100033FD7 /* ChageLogoMobileconfig.m in Sources */,
+				CAAC6E4525848D2F00033FD7 /* PinWordsSegmentIntentHandler.m in Sources */,
+				CABF3FD62571E19600EBF0E0 /* Intents.intentdefinition in Sources */,
+				CAAC6E7625848DAE00033FD7 /* SFSymbolsIntentIntentHandler.m in Sources */,
+				CAAC6D37257CD00B00033FD7 /* SymbolPreviewCell.m in Sources */,
+				CAAC6D35257CD00B00033FD7 /* SFSymbolDatasource.m in Sources */,
+				CAAC6D34257CD00B00033FD7 /* SFSymbolCategory.m in Sources */,
+				CAAC6D3A257CD00B00033FD7 /* SymbolSearchResultsViewController.m in Sources */,
+				CAAC6CD0257CC36300033FD7 /* AppMainViewController.m in Sources */,
+				CAAC6C0B25739DDF00033FD7 /* SocialValuesEncoderDecoder.m in Sources */,
+				CAAC6E2525848B8100033FD7 /* MD5IntentHandler.m in Sources */,
+				CAAC6D38257CD00B00033FD7 /* SymbolsViewController.m in Sources */,
+				CAAC6D3B257CD00B00033FD7 /* CategoriesViewController.m in Sources */,
+				CAAC6E132584871A00033FD7 /* GetUUIDHandler.m in Sources */,
+				CA1E8B172543F94A00049305 /* SceneDelegate.m in Sources */,
+				CAAC6E2C25848C2700033FD7 /* DataStoreIntentHandler.m in Sources */,
+				CAAC6EE82584F50B00033FD7 /* UIColor+Extends.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CABF3FA52571D72C00EBF0E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAAC6E2625848B8100033FD7 /* MD5IntentHandler.m in Sources */,
+				CAAC6F91258DF32900033FD7 /* ChageLogoMobileconfig.m in Sources */,
+				CAAC6C0C25739DDF00033FD7 /* SocialValuesEncoderDecoder.m in Sources */,
+				CABF400C25724A7800EBF0E0 /* NSString+WordsSegmentExtension.m in Sources */,
+				CAAC6E3F25848D1D00033FD7 /* DeleteDataStoreIntentHandler.m in Sources */,
+				CAAC6E4625848D2F00033FD7 /* PinWordsSegmentIntentHandler.m in Sources */,
+				CAAC6E7725848DAE00033FD7 /* SFSymbolsIntentIntentHandler.m in Sources */,
+				CAAC6E6225848D7D00033FD7 /* ChangeBatchAppLogoGroupIntentHandler.m in Sources */,
+				CAAC6E6925848D8E00033FD7 /* JudgeNetworkConnectIntentHandler.m in Sources */,
+				CABF3FD72571E19600EBF0E0 /* Intents.intentdefinition in Sources */,
+				CAAC6E142584871A00033FD7 /* GetUUIDHandler.m in Sources */,
+				CAAC6E3525848CA500033FD7 /* SearchDataStoreIntentHandler.m in Sources */,
+				CAAC6B5325727AAA00033FD7 /* NSString+WGBExtension.m in Sources */,
+				CAAC6D3F257CD03000033FD7 /* SFSymbolCategory.m in Sources */,
+				CAAC6D40257CD03000033FD7 /* SFSymbol.m in Sources */,
+				CAAC6D41257CD03000033FD7 /* SFSymbolDatasource.m in Sources */,
+				CAAC6E2D25848C2700033FD7 /* DataStoreIntentHandler.m in Sources */,
+				CAAC6BB72573610D00033FD7 /* DetectQRCodeTool.m in Sources */,
+				CABF3FAD2571D72C00EBF0E0 /* IntentHandler.m in Sources */,
+				CAAC6EE92584F50B00033FD7 /* UIColor+Extends.m in Sources */,
+				CAAC6BA425735A5400033FD7 /* WGBReachability.m in Sources */,
+				CAAC6E7025848DA000033FD7 /* DetectedQRCodeIntentHandler.m in Sources */,
+				CAAC6E4D25848D3F00033FD7 /* VCardTemplateIntentHandler.m in Sources */,
+				CAAC6E5B25848D6D00033FD7 /* ChangeBatchLogoConfigIntentHandler.m in Sources */,
+				CAAC6E5425848D5300033FD7 /* ChangeLogoOnlyOneIntentHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA1E8C5D254E997800049305 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA1E8C56254E997300049305 /* WGBEmoticonsFaceExtension */;
+			targetProxy = CA1E8C5C254E997800049305 /* PBXContainerItemProxy */;
+		};
+		CABF3FC22571D72C00EBF0E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CABF3FA82571D72C00EBF0E0 /* Shortcuts */;
+			targetProxy = CABF3FC12571D72C00EBF0E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA1E8B1B2543F94A00049305 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA1E8B1C2543F94A00049305 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA1E8B202543F94F00049305 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA1E8B212543F94F00049305 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA1E8B262543F94F00049305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Versioned";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CA1E8B272543F94F00049305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA1E8B292543F94F00049305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26378B57F9725400CB10744B /* Pods-ChangeAppLogo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56M9G56M39;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/ChangeAppLogo/HeaderFiles/PrefixHeader.pch;
+				INFOPLIST_FILE = ChangeAppLogo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzn.voice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA1E8B2A2543F94F00049305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 546A2614ABC86A5F0F68863C /* Pods-ChangeAppLogo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56M9G56M39;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/ChangeAppLogo/HeaderFiles/PrefixHeader.pch;
+				INFOPLIST_FILE = ChangeAppLogo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzn.voice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA1E8C60254E997800049305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Messages Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56M9G56M39;
+				INFOPLIST_FILE = WGBEmoticonsFaceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzn.wgb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA1E8C61254E997800049305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Messages Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56M9G56M39;
+				INFOPLIST_FILE = WGBEmoticonsFaceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzn.wgb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CABF3FC82571D72C00EBF0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56M9G56M39;
+				INFOPLIST_FILE = Shortcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzn.coder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CABF3FC92571D72C00EBF0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56M9G56M39;
+				INFOPLIST_FILE = Shortcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzn.coder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA1E8B0A2543F94A00049305 /* Build configuration list for PBXProject "ChangeAppLogo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA1E8B262543F94F00049305 /* Debug */,
+				CA1E8B272543F94F00049305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA1E8B282543F94F00049305 /* Build configuration list for PBXNativeTarget "ChangeAppLogo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA1E8B292543F94F00049305 /* Debug */,
+				CA1E8B2A2543F94F00049305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA1E8C62254E997800049305 /* Build configuration list for PBXNativeTarget "WGBEmoticonsFaceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA1E8C60254E997800049305 /* Debug */,
+				CA1E8C61254E997800049305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CABF3FC72571D72C00EBF0E0 /* Build configuration list for PBXNativeTarget "Shortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CABF3FC82571D72C00EBF0E0 /* Debug */,
+				CABF3FC92571D72C00EBF0E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA1E8B072543F94A00049305 /* Project object */;
+}
