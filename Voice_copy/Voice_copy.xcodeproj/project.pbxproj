@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2160B803284EE73200BB0AEC /* APPStoreModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2160B802284EE73200BB0AEC /* APPStoreModel.m */; };
+		2160B806284F364300BB0AEC /* AddDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2160B804284F364300BB0AEC /* AddDetailViewController.swift */; };
+		2160B807284F364300BB0AEC /* AddDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2160B805284F364300BB0AEC /* AddDetailViewController.xib */; };
 		216B390228485DE800853F76 /* SearchAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216B390028485DE800853F76 /* SearchAppViewController.swift */; };
 		216B390328485DE800853F76 /* SearchAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 216B390128485DE800853F76 /* SearchAppViewController.xib */; };
 		216B390828485E1A00853F76 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216B390628485E1A00853F76 /* SearchTableViewCell.swift */; };
@@ -21,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2160B800284EE73100BB0AEC /* Voice_copy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Voice_copy-Bridging-Header.h"; sourceTree = "<group>"; };
+		2160B801284EE73200BB0AEC /* APPStoreModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPStoreModel.h; sourceTree = "<group>"; };
+		2160B802284EE73200BB0AEC /* APPStoreModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APPStoreModel.m; sourceTree = "<group>"; };
+		2160B804284F364300BB0AEC /* AddDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDetailViewController.swift; sourceTree = "<group>"; };
+		2160B805284F364300BB0AEC /* AddDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddDetailViewController.xib; sourceTree = "<group>"; };
 		216B390028485DE800853F76 /* SearchAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAppViewController.swift; sourceTree = "<group>"; };
 		216B390128485DE800853F76 /* SearchAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchAppViewController.xib; sourceTree = "<group>"; };
 		216B390628485E1A00853F76 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
@@ -74,6 +82,8 @@
 				216B390128485DE800853F76 /* SearchAppViewController.xib */,
 				216B390628485E1A00853F76 /* SearchTableViewCell.swift */,
 				216B390728485E1A00853F76 /* SearchTableViewCell.xib */,
+				2160B804284F364300BB0AEC /* AddDetailViewController.swift */,
+				2160B805284F364300BB0AEC /* AddDetailViewController.xib */,
 			);
 			path = APP_Add;
 			sourceTree = "<group>";
@@ -106,6 +116,9 @@
 				2186B841284069EC008FFF24 /* Assets.xcassets */,
 				2186B843284069EC008FFF24 /* LaunchScreen.storyboard */,
 				2186B846284069EC008FFF24 /* Info.plist */,
+				2160B801284EE73200BB0AEC /* APPStoreModel.h */,
+				2160B802284EE73200BB0AEC /* APPStoreModel.m */,
+				2160B800284EE73100BB0AEC /* Voice_copy-Bridging-Header.h */,
 			);
 			path = Voice_copy;
 			sourceTree = "<group>";
@@ -153,6 +166,7 @@
 				TargetAttributes = {
 					2186B834284069EC008FFF24 = {
 						CreatedOnToolsVersion = 13.4;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -180,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2186B845284069EC008FFF24 /* LaunchScreen.storyboard in Resources */,
+				2160B807284F364300BB0AEC /* AddDetailViewController.xib in Resources */,
 				216B390928485E1A00853F76 /* SearchTableViewCell.xib in Resources */,
 				216B390328485DE800853F76 /* SearchAppViewController.xib in Resources */,
 				2186B842284069EC008FFF24 /* Assets.xcassets in Resources */,
@@ -237,6 +252,8 @@
 			files = (
 				21FB10D32846083A001159E9 /* SplashViewController.swift in Sources */,
 				21FB10DA28460A87001159E9 /* GuideViewController.swift in Sources */,
+				2160B803284EE73200BB0AEC /* APPStoreModel.m in Sources */,
+				2160B806284F364300BB0AEC /* AddDetailViewController.swift in Sources */,
 				2186B839284069EC008FFF24 /* AppDelegate.swift in Sources */,
 				216B390828485E1A00853F76 /* SearchTableViewCell.swift in Sources */,
 				21FB10DE28460BF3001159E9 /* GuideView.swift in Sources */,
@@ -378,6 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 56M9G56M39;
@@ -396,6 +414,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zhennan.wlqs.Voice-copy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Voice_copy/Voice_copy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -407,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 56M9G56M39;
@@ -425,6 +446,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zhennan.wlqs.Voice-copy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Voice_copy/Voice_copy-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

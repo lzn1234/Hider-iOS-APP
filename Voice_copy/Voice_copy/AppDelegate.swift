@@ -12,7 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow? = {
         let window = UIWindow(frame: UIScreen.main.bounds)
-        var vc = SearchAppViewController()
+        var vc = AddDetailViewController()
         var nav = UINavigationController(rootViewController: vc)
         window.rootViewController = nav
         return window

@@ -13,5 +13,9 @@ target 'Voice_copy' do
   pod 'TZImagePickerController'
 
   pod "YYModel"
+  
+  pod 'IQKeyboardManagerSwift'
 
+  pod "SDWebImage"
+  
 end

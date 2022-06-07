@@ -1,32 +1,42 @@
 PODS:
+  - IQKeyboardManagerSwift (6.5.10)
   - LookinServer (1.0.5)
   - RSKImageCropper (3.0.2)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
   - SnapKit (5.6.0)
   - TZImagePickerController (3.8.1)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
+  - IQKeyboardManagerSwift
   - LookinServer
   - RSKImageCropper
+  - SDWebImage
   - SnapKit
   - TZImagePickerController
   - YYModel
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - IQKeyboardManagerSwift
     - LookinServer
     - RSKImageCropper
+    - SDWebImage
     - SnapKit
     - TZImagePickerController
     - YYModel
 
 SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
   LookinServer: 3d9a02529ed94a6a08154440c26f6d7f453bb1e7
   RSKImageCropper: 1ac71e9a82e3f41eea3eedfff8eacb0d3821c9ec
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   TZImagePickerController: 943511626019431372cf908f24c114521e484f0e
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 8d4482b3d4ca271d92cbd8ef56a72a807c117855
+PODFILE CHECKSUM: 9f043c87231c0a7c1bab62a0ecbbef1c3d0df1b7
 
 COCOAPODS: 1.11.3
