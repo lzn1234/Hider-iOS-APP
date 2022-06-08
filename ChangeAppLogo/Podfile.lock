@@ -19,7 +19,7 @@ DEPENDENCIES:
   - YYModel
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - GCDWebServer
     - IQKeyboardManager
     - MBProgressHUD
@@ -35,6 +35,6 @@ SPEC CHECKSUMS:
   TZImagePickerController: 4f6e91cf00d67827ec23bd3c2f849cbd054b4979
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 2f705c32757a48ae3623feb8371c53010509c1d6
+PODFILE CHECKSUM: f5d2b5dcfc8c22fc0e00e0260ff936729d9f84f1
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.10.0

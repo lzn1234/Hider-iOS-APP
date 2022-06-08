@@ -9,6 +9,17 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddDetailViewController" customModule="Voice_copy" customModuleProvider="target">
             <connections>
+                <outlet property="appIcon" destination="sah-HS-ByB" id="dqr-s2-C3U"/>
+                <outlet property="appName" destination="dsj-sA-CCI" id="XKI-dF-mHY"/>
+                <outlet property="appNameTextField" destination="pcr-SV-RRQ" id="E5c-9y-j5B"/>
+                <outlet property="hideAppIcon" destination="LCL-aY-0lY" id="S3W-5h-w5w"/>
+                <outlet property="hideAppName" destination="fXY-1Q-n79" id="dFw-EM-B3p"/>
+                <outlet property="hideView" destination="Ihq-cX-k1x" id="bDf-Sq-Rhx"/>
+                <outlet property="hideViewHight" destination="H7Z-xv-Tkd" id="6VA-Ai-dgW"/>
+                <outlet property="noPwdButton" destination="mXo-7P-FQO" id="wkR-2A-riA"/>
+                <outlet property="pwdButton" destination="iBd-mG-cKk" id="deX-Nw-cr5"/>
+                <outlet property="pwdTextField" destination="w03-jl-Uv1" id="vt0-d2-N2s"/>
+                <outlet property="showSecureButton" destination="M9Y-6B-8U9" id="4hK-F8-6lF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,7 +34,7 @@
                         <constraint firstAttribute="height" constant="186.5" id="ecF-JD-DfQ"/>
                     </constraints>
                 </imageView>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHY-5g-fZt">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHY-5g-fZt">
                     <rect key="frame" x="0.0" y="115" width="414" height="781"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJc-WS-8aA" userLabel="Content">
@@ -106,6 +117,9 @@
                                                     </constraints>
                                                     <state key="normal" image="pwd_unvisible "/>
                                                     <state key="selected" image="pwds_ visible"/>
+                                                    <connections>
+                                                        <action selector="showSecureEvent:" destination="-1" eventType="touchUpInside" id="RDz-hy-Orh"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.9457898736" green="0.9488725066" blue="0.96122831109999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -144,6 +158,9 @@
                                             <state key="selected" image="pwds_selected">
                                                 <color key="titleColor" red="0.15514719490000001" green="0.71754914520000002" blue="0.4920575023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="setPwdEvent:" destination="-1" eventType="touchUpInside" id="esW-Jh-ZnY"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXo-7P-FQO">
                                             <rect key="frame" x="237.5" y="151.5" width="50" height="25"/>
@@ -159,6 +176,9 @@
                                             <state key="selected" image="pwds_selected">
                                                 <color key="titleColor" red="0.15514719490000001" green="0.71754914520000002" blue="0.4920575023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="setPwdEvent:" destination="-1" eventType="touchUpInside" id="V4T-ud-sC6"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否设置密码：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlU-wC-SHf">
                                             <rect key="frame" x="25" y="153.5" width="121.5" height="21"/>
@@ -176,6 +196,9 @@
                                             <state key="normal" title="重新上传">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="uploadIconevent:" destination="-1" eventType="touchUpInside" id="hfY-GW-e6j"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.94348310759999998" green="0.94783863710000005" blue="0.96090522560000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -242,6 +265,9 @@
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="confirmAddAppEvent:" destination="-1" eventType="touchUpInside" id="SK9-MS-khi"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

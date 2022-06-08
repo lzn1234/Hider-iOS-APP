@@ -5,6 +5,10 @@
 
 #import "APPStoreModel.h"
 
-
+// SDWebImage 框架
 #import <UIImageView+WebCache.h>
+
+// 图片上传和裁剪工具
+#import "TZImagePickerController.h"
+#import "RSKImageCropper.h"
 
