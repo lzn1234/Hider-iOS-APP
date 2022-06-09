@@ -41,6 +41,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 看不懂这个
     if(!self.webServer.isRunning){
         [self.webServer startWithPort:8090 bonjourName:nil];
     }
@@ -50,6 +51,7 @@
     NSLog(@"%@",NSHomeDirectory());
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"文件" style:(UIBarButtonItemStylePlain) target:self action:@selector(skipFilesManagerPage)];
+    // 设置图标
     if(self.iconImg){
         [self.selectIconBtn setBackgroundImage:self.iconImg forState:UIControlStateNormal];
         [self.selectIconBtn setTitle:@"" forState:UIControlStateNormal];
@@ -104,23 +106,32 @@
     NSString *bundleId = self.bundleIdTextfield.text;
     NSString *URL = [self.URLTextfield.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 
+    // 转换图片格式？
     NSData *iconData = UIImageJPEGRepresentation(self.iconImg, 0.7);
     NSString *base64Img = [iconData base64EncodedStringWithOptions:(NSDataBase64Encoding64CharacterLineLength)];
+    
+    // 生成啥 uuid
     NSString *uuid1 = [NSUUID UUID].UUIDString;//随机1
     NSString *uuid2 = [NSUUID UUID].UUIDString;//随机2
     
+    // 配置字符串，等下去类里面看看
     NSString *appconfigStr = [ChageLogoMobileconfig createOneAppConfigWithIcon:base64Img isRemoveFromDestop:self.isRemoveSwitch.on appName:appName uuid:uuid1 bundleId:bundleId URL:URL];
     NSString *fileString = [ChageLogoMobileconfig addConfigIntoGroupWithConfigs:appconfigStr appSetName:[NSString stringWithFormat:@"%@的桌面logo描述文件",appName] uuid:uuid2];
 
+    // 创建文件名和路径
     NSString *fileName = [NSString stringWithFormat:@"%@.mobileconfig",appName];
     NSString *path = [NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/%@",fileName]];
+    
+    // 存储配置字符串到文件中
     if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
         [[NSFileManager defaultManager] createFileAtPath:path contents:[fileString dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
     }else{
         [fileString writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:nil];
     }
     
+    // url 编码处理，获取真实 url 字符串
     NSString *realStr = [fileName stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    //
     NSString *url = [NSString stringWithFormat:@"http://127.0.0.1:8090/%@",realStr];
     //这里只能是应用内访问 因为本地服务切到后台还要保活之类的 以及Safari能否访问沙盒犹未可知 大概是不行的 除非先把描述文件放到云端 然后打开Safari去访问云端那个地址
     SFSafariViewController *webVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:url]];
@@ -144,6 +155,7 @@
     self.appNameTextfield.text = nil;
 }
 
+// 懒加载
 - (GCDWebServer *)webServer {
     if (!_webServer) {
         _webServer = [[GCDWebServer alloc] init];

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateAppIconViewController" customModule="Voice_copy" customModuleProvider="target">
+            <connections>
+                <outlet property="appIconImageVIew" destination="Dym-VN-nQe" id="y1K-nC-Kee"/>
+                <outlet property="appIdTextfield" destination="3yJ-su-MNd" id="YyY-7s-veV"/>
+                <outlet property="appNameTextfield" destination="yYS-V0-Ymv" id="rcm-fY-qVK"/>
+                <outlet property="appUrlTextfield" destination="Ugp-Wa-eHo" id="0No-zs-ObN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入bundleId" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="3yJ-su-MNd">
+                    <rect key="frame" x="88.5" y="313" width="237" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="237" id="KA0-Ul-5mZ"/>
+                        <constraint firstAttribute="height" constant="34" id="rwm-70-xR8"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入universal link或者URLScheme" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Ugp-Wa-eHo">
+                    <rect key="frame" x="88.5" y="373" width="237" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="237" id="FXd-xz-deO"/>
+                        <constraint firstAttribute="height" constant="34" id="zdd-SL-klt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入应用名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yYS-V0-Ymv">
+                    <rect key="frame" x="88.5" y="432" width="237" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="237" id="iXu-C3-RTv"/>
+                        <constraint firstAttribute="height" constant="34" id="yez-xp-wBc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否允许删除桌面 APP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3e-s4-H8Q">
+                    <rect key="frame" x="78" y="527" width="175" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="V7C-Af-dS1"/>
+                        <constraint firstAttribute="width" constant="175" id="rFF-p6-676"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appVipIcon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dym-VN-nQe">
+                    <rect key="frame" x="147" y="118" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="N3W-zu-Xfd"/>
+                        <constraint firstAttribute="width" constant="120" id="YZi-T1-IwY"/>
+                    </constraints>
+                </imageView>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c0e-mP-Bwb">
+                    <rect key="frame" x="299" y="522" width="51" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="C0O-l7-8HS"/>
+                        <constraint firstAttribute="width" constant="49" id="W7D-aF-vzw"/>
+                    </constraints>
+                </switch>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQh-YE-fGe">
+                    <rect key="frame" x="156.5" y="591" width="101" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="j8h-nN-9Lj"/>
+                        <constraint firstAttribute="width" constant="101" id="qyb-Yy-elU"/>
+                    </constraints>
+                    <buttonConfiguration key="configuration" style="tinted" title="确定生成"/>
+                    <connections>
+                        <action selector="confirmAddAppIcon:" destination="-1" eventType="touchUpInside" id="FuJ-et-eD7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="c0e-mP-Bwb" firstAttribute="leading" secondItem="T3e-s4-H8Q" secondAttribute="trailing" constant="46" id="7IU-Qd-yEs"/>
+                <constraint firstItem="RQh-YE-fGe" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="7dT-CO-xrv"/>
+                <constraint firstItem="3yJ-su-MNd" firstAttribute="top" secondItem="Dym-VN-nQe" secondAttribute="bottom" constant="75" id="AEw-2Y-uxA"/>
+                <constraint firstItem="T3e-s4-H8Q" firstAttribute="top" secondItem="yYS-V0-Ymv" secondAttribute="bottom" constant="61" id="Cp9-mZ-Qwb"/>
+                <constraint firstItem="Ugp-Wa-eHo" firstAttribute="top" secondItem="3yJ-su-MNd" secondAttribute="bottom" constant="26" id="I6I-Zu-baS"/>
+                <constraint firstItem="Ugp-Wa-eHo" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="IFg-p5-KHu"/>
+                <constraint firstItem="3yJ-su-MNd" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="QDN-3a-5eQ"/>
+                <constraint firstItem="RQh-YE-fGe" firstAttribute="top" secondItem="T3e-s4-H8Q" secondAttribute="bottom" constant="43" id="Yap-qO-Lz2"/>
+                <constraint firstItem="T3e-s4-H8Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="78" id="ggx-P9-7qs"/>
+                <constraint firstItem="Dym-VN-nQe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="74" id="hPt-VR-Ip5"/>
+                <constraint firstItem="Dym-VN-nQe" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="hep-3V-CaT"/>
+                <constraint firstItem="c0e-mP-Bwb" firstAttribute="centerY" secondItem="T3e-s4-H8Q" secondAttribute="centerY" id="q5N-r8-MF8"/>
+                <constraint firstItem="yYS-V0-Ymv" firstAttribute="top" secondItem="Ugp-Wa-eHo" secondAttribute="bottom" constant="25" id="tsl-kl-ohc"/>
+                <constraint firstItem="yYS-V0-Ymv" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="vQC-pq-ChM"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="69.642857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="appVipIcon" width="60" height="60"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

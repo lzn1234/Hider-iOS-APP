@@ -475,7 +475,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOD-nI-cGg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="607" y="7"/>
+            <point key="canvasLocation" x="623" y="-113"/>
         </scene>
         <!--社会主义核心价值观编解码-->
         <scene sceneID="TTG-4L-TKM">

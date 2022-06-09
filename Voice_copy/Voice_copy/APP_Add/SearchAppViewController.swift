@@ -82,4 +82,9 @@ extension SearchAppViewController: UITableViewDelegate, UITableViewDataSource{
         cell.appName.text = model.trackName
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = CreateAppIconViewController()
+        vc.model = appStoreModel?.results[indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
