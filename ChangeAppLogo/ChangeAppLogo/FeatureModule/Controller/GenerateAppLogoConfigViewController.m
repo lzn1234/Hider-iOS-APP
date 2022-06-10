@@ -110,7 +110,7 @@
     NSData *iconData = UIImageJPEGRepresentation(self.iconImg, 0.7);
     NSString *base64Img = [iconData base64EncodedStringWithOptions:(NSDataBase64Encoding64CharacterLineLength)];
     
-    // 生成啥 uuid
+    // 生成随机的两个 uuid
     NSString *uuid1 = [NSUUID UUID].UUIDString;//随机1
     NSString *uuid2 = [NSUUID UUID].UUIDString;//随机2
     
