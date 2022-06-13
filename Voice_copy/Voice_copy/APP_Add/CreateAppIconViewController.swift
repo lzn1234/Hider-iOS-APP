@@ -35,5 +35,6 @@ class CreateAppIconViewController: UIViewController {
     }
     @IBAction func confirmAddAppIcon(_ sender: Any) {
         
+        InterfaceService.shared.request(interface: .appLink(packageName: model!.bundleId, appVersion: model!.version), completion: nil)
     }
 }

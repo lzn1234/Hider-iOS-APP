@@ -28,7 +28,7 @@
                         <constraint firstAttribute="width" constant="237" id="KA0-Ul-5mZ"/>
                         <constraint firstAttribute="height" constant="34" id="rwm-70-xR8"/>
                     </constraints>
-                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入universal link或者URLScheme" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Ugp-Wa-eHo">

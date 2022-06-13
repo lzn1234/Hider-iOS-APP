@@ -19,6 +19,8 @@
 		2186B839284069EC008FFF24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2186B838284069EC008FFF24 /* AppDelegate.swift */; };
 		2186B842284069EC008FFF24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2186B841284069EC008FFF24 /* Assets.xcassets */; };
 		2186B845284069EC008FFF24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2186B843284069EC008FFF24 /* LaunchScreen.storyboard */; };
+		21A32D502856E64B00491FB7 /* InterfaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A32D4F2856E64B00491FB7 /* InterfaceService.swift */; };
+		21A32D522857311600491FB7 /* String+DES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A32D512857311600491FB7 /* String+DES.swift */; };
 		21FB10D32846083A001159E9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FB10D22846083A001159E9 /* SplashViewController.swift */; };
 		21FB10DA28460A87001159E9 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FB10D828460A87001159E9 /* GuideViewController.swift */; };
 		21FB10DE28460BF3001159E9 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FB10DD28460BF3001159E9 /* GuideView.swift */; };
@@ -42,6 +44,8 @@
 		2186B841284069EC008FFF24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2186B844284069EC008FFF24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2186B846284069EC008FFF24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21A32D4F2856E64B00491FB7 /* InterfaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceService.swift; sourceTree = "<group>"; };
+		21A32D512857311600491FB7 /* String+DES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DES.swift"; sourceTree = "<group>"; };
 		21FB10D22846083A001159E9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		21FB10D828460A87001159E9 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		21FB10DD28460BF3001159E9 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				2160B805284F364300BB0AEC /* AddDetailViewController.xib */,
 				212F21A22851DEE80042A742 /* CreateAppIconViewController.swift */,
 				212F21A32851DEE80042A742 /* CreateAppIconViewController.xib */,
+				21A32D4F2856E64B00491FB7 /* InterfaceService.swift */,
+				21A32D512857311600491FB7 /* String+DES.swift */,
 			);
 			path = APP_Add;
 			sourceTree = "<group>";
@@ -263,9 +269,11 @@
 				2160B803284EE73200BB0AEC /* APPStoreModel.m in Sources */,
 				2160B806284F364300BB0AEC /* AddDetailViewController.swift in Sources */,
 				2186B839284069EC008FFF24 /* AppDelegate.swift in Sources */,
+				21A32D522857311600491FB7 /* String+DES.swift in Sources */,
 				216B390828485E1A00853F76 /* SearchTableViewCell.swift in Sources */,
 				21FB10DE28460BF3001159E9 /* GuideView.swift in Sources */,
 				216B390228485DE800853F76 /* SearchAppViewController.swift in Sources */,
+				21A32D502856E64B00491FB7 /* InterfaceService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
