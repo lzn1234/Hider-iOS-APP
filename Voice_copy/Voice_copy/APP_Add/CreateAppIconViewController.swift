@@ -15,12 +15,6 @@ class CreateAppIconViewController: UIViewController {
     @IBOutlet weak var appUrlTextfield: UITextField!
     @IBOutlet weak var appNameTextfield: UITextField!
     
-    var webServer:GCDWebServer = {
-       let webServer = GCDWebServer()
-        webServer.addGETHandler(forBasePath: "/", directoryPath: NSHomeDirectory() + "Documents", indexFilename: nil, cacheAge: 3600, allowRangeRequests: true)
-        return webServer
-    }()
-    
     var model: APPInfoModel?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +22,16 @@ class CreateAppIconViewController: UIViewController {
         self.appIdTextfield.text = model?.bundleId
         self.appNameTextfield.text = model?.trackName
         
-        // 启动 webServer 服务
-        if webServer.isRunning == false {
-            webServer.start(withPort: 8090, bonjourName: nil)
-        }
     }
+    
     @IBAction func confirmAddAppIcon(_ sender: Any) {
         
         InterfaceService.shared.request(interface: .appLink(packageName: model!.bundleId, appVersion: model!.version), completion: nil)
+        let tipInfoVC = TipInfoViewController()
+        tipInfoVC.appName = model!.trackName
+        tipInfoVC.iconImage = appIconImageVIew.image
+        tipInfoVC.bundleID = model!.bundleId
+        tipInfoVC.scheme = "douyinv1opensdk"
+        self.navigationController?.pushViewController(tipInfoVC, animated: true)
     }
 }

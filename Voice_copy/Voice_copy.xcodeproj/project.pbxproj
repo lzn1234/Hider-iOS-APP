@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		212F21A42851DEE80042A742 /* CreateAppIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212F21A22851DEE80042A742 /* CreateAppIconViewController.swift */; };
 		212F21A52851DEE80042A742 /* CreateAppIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 212F21A32851DEE80042A742 /* CreateAppIconViewController.xib */; };
+		2137124028586DAB00BA1833 /* ChageLogoMobileconfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2137123F28586DAB00BA1833 /* ChageLogoMobileconfig.m */; };
+		2137124328586EAC00BA1833 /* TipInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2137124128586EAC00BA1833 /* TipInfoViewController.swift */; };
+		2137124428586EAC00BA1833 /* TipInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2137124228586EAC00BA1833 /* TipInfoViewController.xib */; };
+		213712462858782900BA1833 /* WeakScriptMessageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213712452858782900BA1833 /* WeakScriptMessageDelegate.swift */; };
+		213712482858791700BA1833 /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = 213712472858791700BA1833 /* help.html */; };
 		2160B803284EE73200BB0AEC /* APPStoreModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2160B802284EE73200BB0AEC /* APPStoreModel.m */; };
 		2160B806284F364300BB0AEC /* AddDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2160B804284F364300BB0AEC /* AddDetailViewController.swift */; };
 		2160B807284F364300BB0AEC /* AddDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2160B805284F364300BB0AEC /* AddDetailViewController.xib */; };
@@ -30,6 +35,12 @@
 /* Begin PBXFileReference section */
 		212F21A22851DEE80042A742 /* CreateAppIconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAppIconViewController.swift; sourceTree = "<group>"; };
 		212F21A32851DEE80042A742 /* CreateAppIconViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAppIconViewController.xib; sourceTree = "<group>"; };
+		2137123E28586DAB00BA1833 /* ChageLogoMobileconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChageLogoMobileconfig.h; sourceTree = "<group>"; };
+		2137123F28586DAB00BA1833 /* ChageLogoMobileconfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChageLogoMobileconfig.m; sourceTree = "<group>"; };
+		2137124128586EAC00BA1833 /* TipInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipInfoViewController.swift; sourceTree = "<group>"; };
+		2137124228586EAC00BA1833 /* TipInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipInfoViewController.xib; sourceTree = "<group>"; };
+		213712452858782900BA1833 /* WeakScriptMessageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakScriptMessageDelegate.swift; sourceTree = "<group>"; };
+		213712472858791700BA1833 /* help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = help.html; sourceTree = "<group>"; };
 		2160B800284EE73100BB0AEC /* Voice_copy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Voice_copy-Bridging-Header.h"; sourceTree = "<group>"; };
 		2160B801284EE73200BB0AEC /* APPStoreModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPStoreModel.h; sourceTree = "<group>"; };
 		2160B802284EE73200BB0AEC /* APPStoreModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APPStoreModel.m; sourceTree = "<group>"; };
@@ -83,6 +94,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		213712492858792100BA1833 /* Html */ = {
+			isa = PBXGroup;
+			children = (
+				213712472858791700BA1833 /* help.html */,
+			);
+			path = Html;
+			sourceTree = "<group>";
+		};
 		216B38FF28485DBA00853F76 /* APP_Add */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +113,13 @@
 				2160B805284F364300BB0AEC /* AddDetailViewController.xib */,
 				212F21A22851DEE80042A742 /* CreateAppIconViewController.swift */,
 				212F21A32851DEE80042A742 /* CreateAppIconViewController.xib */,
+				2137124128586EAC00BA1833 /* TipInfoViewController.swift */,
+				2137124228586EAC00BA1833 /* TipInfoViewController.xib */,
+				2137123E28586DAB00BA1833 /* ChageLogoMobileconfig.h */,
+				2137123F28586DAB00BA1833 /* ChageLogoMobileconfig.m */,
 				21A32D4F2856E64B00491FB7 /* InterfaceService.swift */,
 				21A32D512857311600491FB7 /* String+DES.swift */,
+				213712452858782900BA1833 /* WeakScriptMessageDelegate.swift */,
 			);
 			path = APP_Add;
 			sourceTree = "<group>";
@@ -121,10 +145,11 @@
 		2186B837284069EC008FFF24 /* Voice_copy */ = {
 			isa = PBXGroup;
 			children = (
+				2186B838284069EC008FFF24 /* AppDelegate.swift */,
+				213712492858792100BA1833 /* Html */,
 				216B38FF28485DBA00853F76 /* APP_Add */,
 				21FB10DC28460A94001159E9 /* Guide */,
 				21FB10D22846083A001159E9 /* SplashViewController.swift */,
-				2186B838284069EC008FFF24 /* AppDelegate.swift */,
 				2186B841284069EC008FFF24 /* Assets.xcassets */,
 				2186B843284069EC008FFF24 /* LaunchScreen.storyboard */,
 				2186B846284069EC008FFF24 /* Info.plist */,
@@ -209,6 +234,8 @@
 				212F21A52851DEE80042A742 /* CreateAppIconViewController.xib in Resources */,
 				2160B807284F364300BB0AEC /* AddDetailViewController.xib in Resources */,
 				216B390928485E1A00853F76 /* SearchTableViewCell.xib in Resources */,
+				2137124428586EAC00BA1833 /* TipInfoViewController.xib in Resources */,
+				213712482858791700BA1833 /* help.html in Resources */,
 				216B390328485DE800853F76 /* SearchAppViewController.xib in Resources */,
 				2186B842284069EC008FFF24 /* Assets.xcassets in Resources */,
 			);
@@ -264,12 +291,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				21FB10D32846083A001159E9 /* SplashViewController.swift in Sources */,
+				2137124028586DAB00BA1833 /* ChageLogoMobileconfig.m in Sources */,
 				21FB10DA28460A87001159E9 /* GuideViewController.swift in Sources */,
 				212F21A42851DEE80042A742 /* CreateAppIconViewController.swift in Sources */,
 				2160B803284EE73200BB0AEC /* APPStoreModel.m in Sources */,
+				2137124328586EAC00BA1833 /* TipInfoViewController.swift in Sources */,
 				2160B806284F364300BB0AEC /* AddDetailViewController.swift in Sources */,
 				2186B839284069EC008FFF24 /* AppDelegate.swift in Sources */,
 				21A32D522857311600491FB7 /* String+DES.swift in Sources */,
+				213712462858782900BA1833 /* WeakScriptMessageDelegate.swift in Sources */,
 				216B390828485E1A00853F76 /* SearchTableViewCell.swift in Sources */,
 				21FB10DE28460BF3001159E9 /* GuideView.swift in Sources */,
 				216B390228485DE800853F76 /* SearchAppViewController.swift in Sources */,

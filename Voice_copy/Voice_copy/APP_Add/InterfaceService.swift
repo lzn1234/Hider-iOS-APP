@@ -101,13 +101,43 @@ extension ServiceInterface:  TargetType {
             bodyParameters["packageName"] = packageName
             bodyParameters["appVersion"] = appVersion
         }
+        var parameters: [String: Any] = [:]
+        let urlParameter: [String: Any] = globalParameter()
         
-        return .requestCompositeParameters(bodyParameters: bodyParameters, bodyEncoding: JSONEncoding.default, urlParameters: [:])
+        
+        var dataParameters: [String: Any] = [:]
+        parameters["data"] = String(bodyParameters)
+        parameters["query"] = String(urlParameter)
+        let parametersString = String(parameters)
+        
+        dataParameters["data"] = parametersString.desEncrypt(key: String("x2dkE4BYFWQOQ7gN".prefix(8)))
+        
+        return .requestCompositeParameters(bodyParameters: dataParameters, bodyEncoding: JSONEncoding.default, urlParameters: [:])
     }
     
     // 请求头
     var headers: [String : String]? {
         return nil
+    }
+    
+    func globalParameter() -> [String: Any] {
+        var resultDict: [String : Any] = [:]
+//        resultDict["mt"] = "iPhone10,3"
+//        resultDict["sv"] = "15.4.1"
+//        resultDict["tz"] = "8"
+//        resultDict["ai"] = "74F438C2-C854-4DF4-89BD-BFE64840D0C5"
+//        resultDict["pid"] = "5"
+//        resultDict["av"] = "1.0.3"
+//        resultDict["ns"] = 1
+//        resultDict["bundleid"] = "com.lzn.voice"
+//        resultDict["ts"] = "1655174313"
+//        resultDict["cc"] = "CN"
+//        resultDict["sng"] = "00d4acc1f5468d1c94e14117ed510a94"
+//        resultDict["c"] = "appstore"
+//        resultDict["idfa"] = "74F438C2-C854-4DF4-89BD-BFE64840D0C5"
+//        resultDict["lan"] = "zh-Hans-CN"
+//        resultDict["bvrs"] = "23"
+        return resultDict
     }
 }
 
