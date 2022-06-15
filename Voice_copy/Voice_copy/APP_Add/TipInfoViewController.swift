@@ -9,7 +9,7 @@ import UIKit
 import WebKit
 import SafariServices
 
-class TipInfoViewController: UIViewController, WKScriptMessageHandler, WKNavigationDelegate, WKUIDelegate, SFSafariViewControllerDelegate{
+class TipInfoViewController: UIViewController, WKScriptMessageHandler, WKNavigationDelegate, WKUIDelegate{
     
     // app相关属性
     var iconImage: UIImage?
@@ -126,9 +126,10 @@ class TipInfoViewController: UIViewController, WKScriptMessageHandler, WKNavigat
 
 extension TipInfoViewController: SFSafariViewControllerDelegate {
     func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
-
+        
         UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString )!, options: [:], completionHandler: nil)
         webServer.stop()
         self.navigationController?.popToRootViewController(animated: true)
     }
 }
+
